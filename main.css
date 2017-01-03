@@ -1,0 +1,170 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+	display: block;
+    list-style-type: decimal;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Begin site CSS */
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #da3c1f;
+}
+h1 {
+	font-size: 3em;
+	font-weight: bold;
+	text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+h2 {
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+b {
+	font-weight: bold;
+}
+.header {
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+.header a {
+	text-decoration: none;
+	color: #da3c1f;
+}
+.header p {
+	margin-top: 5px;
+}
+.dialog {
+	padding: 8px 10px 8px 10px;
+	outline: none;
+	border: 0;
+	border-bottom: 4px solid #1fda9a;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 1.3em;
+	display: inline-block;
+	margin: 0;
+	background: none;
+	color: #da3c1f;
+	transition: 0.3s;
+	height: 50px;
+}
+select.dialog {
+	border-bottom: 4px solid #1fda9a;
+}
+select.dialog:focus, select.dialog:hover {
+	border-bottom: 4px solid #e8b71a;
+}
+input[type="button"].dialog:focus, input[type="button"].dialog:hover {
+	color: #e8b71a;
+}
+input[type="button"].dialog {
+	background: #1fda9a;
+	font-weight: bold;
+}
+input[type="button"].dialog:hover, select.dialog:hover {
+	cursor: pointer;
+}
+select, option {
+   margin: 50px;
+   border: 1px solid #111;
+   background: #333;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+.main .container {
+	margin: 0 auto;
+	width: 800px;
+    height: 198px;
+	text-align: center;
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+div.input p, .time-selection {
+    display: inline-block;
+}
+div.info div {
+	background: #FFF;
+	color: #333;
+	margin: 10px;
+	padding: 20px 40px 20px 40px;
+    border-top: 4px solid #f7eac8;
+}
+.info .total-sleep {
+	border-top: 4px solid #db3340;
+	border-right: 4px solid #e8b71a;
+	border-bottom: 4px solid #1fda9a;
+	border-left: 4px solid #28abe3;
+}
+::-webkit-input-placeholder {
+   color: #444;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #444;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #444;
+}
+:-ms-input-placeholder {
+  color: #444;
+}
+select::-ms-expand { /* for IE 11 */
+    display: none;
+}
+
+/*
+#f7eac8
+#db3340
+#e8b71a
+#1fda9a
+#28abe3
+*/

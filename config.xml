@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns		= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		= "com.charlesdesouza.SleepWell"
+	version 	= "1.0.0">
+
+	<name>Sleep Well</name>
+
+	<description>
+		This app allows you to calculate what time you should sleep or the time that you should wake up, in order to have a proper REM sleep.
+	</description>
+
+	<author href="http://charlesdesouza.com"
+		email="charles.desouza3000@gmail.com">
+		Charles Desouza
+	</author>
+
+    <icon src="icons/icon.png" default="true"/>
+
+	<feature name="http://api.phonegap.com/1.0/geolocation"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+
+	<preference name="orientation" value="portrait" />
+</widget>

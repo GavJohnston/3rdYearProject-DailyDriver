@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sleep | Daily Driver</title>
+
+
+        <!-- iPad/iPhone specific css below, add after your main css >
+        <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
+        <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
+        -->
+        <!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
+         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/prettyPhoto.css" rel="stylesheet">
+        <link href="css/animate.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+            <link rel="shortcut icon" href="images/ico/favicon.ico">
+            <script type="text/javascript" charset="utf-8" src="js/phonegap-1.4.1.js"></script>
+            <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+            <script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.0.1.min.js"></script>
+            <script type="text/javascript">
+                
+                function onBodyLoad()
+                {		
+                    document.addEventListener("deviceready", onDeviceReady, false);
+                }
+                
+                
+                </script>
+            
+            </head>
+    <body onload="onBodyLoad()">
+<header id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-4">
+                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  +0123 456 70 90</p></div>
+                    </div>
+                    <div class="col-sm-6 col-xs-8">
+                       <div class="social">
+                            <ul class="social-share">
+                                <li><a href="https://www.facebook.com/Daily-Driver-712553245587584/?skip_nax_wizard=true"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/dailydrive16"><i class="fa fa-twitter"></i></a></li>
+
+                            </ul>
+                            
+                       </div>
+                    </div>
+                </div>
+            </div><!--/.container-->
+        </div><!--/.top-bar-->
+
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.php"><img src="images/logo2.png" alt="logo"></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about-us.php">About Us</a></li>
+                        <li><a href="Commute.php">Commute</a></li>
+                          <li><a href="dailycosts.php">Daily Costs</a></li>                      
+                        <li><a href="Meals.php">Meals</a></li>
+                        <li><a href="Tasks.php">Tasks</a></li> 
+                        <li class="active"><a href="Sleep.php">Sleep</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+        
+    </header><!--/header-->
+
+ <section id="feature" class="transparent-bg">
+                    <div class="container">
+                        <div class="center wow fadeInDown">
+        <!-- Later -->
+            <div data-role="content">
+                <div id="sleepDisplay">
+                    <h2>What time will you sleep at ?</h2>
+                    Hour:
+                    <select id="hour">
+                        <option value="0">00</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                    </select>
+                    Minute:
+                    <select id="minute">
+                        <option value="0">00</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                    </select>
+                    <br/>
+                    <a class="btn btn-primary active" href="#"  data-role="button" id="laterTime">GO</a>
+                </div>
+                <div id="wakeupTime2"></div>
+                <a class="btn btn-primary active" href="Sleep.php"  data-role="button">Back</a>
+            </div>            
+        </div>
+     </div>
+        </section>
+        <script type="text/javascript">
+            $("#laterTime").click(function(){ 
+                                  var hour = $("#hour").val();
+                                  var hour_milli_sec = hour * 3600000;
+                                  var minute = $("#minute").val();
+                                  var minute_milli_sec = minute * 60000;
+                                  var d = new Date();
+                                  var n = d.getTime();
+                                  
+                                  var total_time = n + hour_milli_sec + minute_milli_sec;
+                                  var futureTime = new Date(total_time);
+                                  
+//                                  alert(minute_milli_sec);
+                                  wakeupEarly = new Date(futureTime);
+                                  wakeupModerate = new Date(futureTime);
+                                  wakeupLate = new Date(futureTime);
+                                  
+                                  wakeupEarly.setMinutes(futureTime.getMinutes() - 360);
+                                  wakeupModerate.setMinutes(futureTime.getMinutes() - 450);
+                                  wakeupLate.setMinutes(futureTime.getMinutes() - 540);
+                                  
+                                  earlyHours = wakeupEarly.getHours();
+                                  earlyMinutes = wakeupEarly.getMinutes();
+                                  if (earlyMinutes < 10){
+                                  earlyMinutes = "0" + earlyMinutes;
+                                  }
+                                  
+                                  moderateHours = wakeupModerate.getHours();
+                                  moderateMinutes = wakeupModerate.getMinutes();
+                                  if (moderateMinutes < 10){
+                                  moderateMinutes = "0" + moderateMinutes;
+                                  }
+                                  
+                                  lateHours = wakeupLate.getHours();
+                                  lateMinutes = wakeupLate.getMinutes();
+                                  if (lateMinutes < 10){
+                                  lateMinutes = "0" + lateMinutes;
+                                  }
+                                  
+                                  var ampm = (earlyHours > 11 ? "PM" : "AM");
+                                  earlyTime = earlyHours + ":" + earlyMinutes + " " + ampm;
+                                  var ampm = (moderateHours > 11 ? "PM" : "AM");
+                                  moderateTime = moderateHours + ":" + moderateMinutes + " " + ampm;
+                                  var ampm = (lateHours > 11 ? "PM" : "AM");
+                                  lateTime = lateHours + ":" + lateMinutes + " " + ampm;
+                                  
+                                  var times = "<h2>Set Your Alarm for:</h2> <br/>" + earlyTime + "<br/>" + moderateTime + "<br/>" + lateTime;
+                                  $("#sleepDisplay").hide();
+                                  $("#wakeupTime2").html(times);
+                                  
+                                  });
+            </script>
+    </body>
+</html>
